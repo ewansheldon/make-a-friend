@@ -1,0 +1,18 @@
+.row.align-center
+  .small-12.medium-6.columns
+
+
+    - if @invite_sent
+      .success-container
+        %h2
+          Invite sent!
+
+    .card
+      %h1.card-title Add a friend!
+
+      %p{:style => "margin-bottom:0px"} Enter your friend's email below and maybe they'll join you here.
+      %p{:style => "margin-bottom:0px"} Oh, by the way, I'm a Rails engine plug-in!
+
+      = form_tag '/friends', :method => :post do
+        = email_field_tag "email", ""
+        = submit_tag "Submit"
