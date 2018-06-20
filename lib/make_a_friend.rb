@@ -1,5 +1,4 @@
 require "make_a_friend/engine"
-require "make_a_friend/application_controller"
 require "../app/controllers/make_a_friend/application_controller"
 
 module MakeAFriend
