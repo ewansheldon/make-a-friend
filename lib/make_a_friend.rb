@@ -1,5 +1,5 @@
 require "make_a_friend/engine"
-require_dependency "make_a_friend/application_controller"
+require "make_a_friend/application_controller"
 
 module MakeAFriend
   class FriendsController < ApplicationController
